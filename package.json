@@ -1,6 +1,4 @@
 {
-  "name": "node-starter",
-  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node -r dotenv/config src",
