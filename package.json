@@ -14,5 +14,8 @@
     "eslint-plugin-import": "*",
     "prettier": "*",
     "webpack": "*"
+  },
+  "engines": {
+    "node": "8"
   }
 }
