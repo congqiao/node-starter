@@ -1,7 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "start": "node -r dotenv/config src",
+    "start": "node src",
+    "dev": "node -r dotenv/config src",
     "build": "webpack --define process.env.NODE_ENV=\"'production'\"",
     "lint": "eslint src",
     "format": "prettier --print-width 120 --no-semi --single-quote --trailing-comma all --write \"src/**/*.js\""
