@@ -7,10 +7,10 @@
     "format": "prettier --print-width 120 --no-semi --single-quote --trailing-comma all --write \"src/**/*.js\""
   },
   "devDependencies": {
-    "dotenv": "*",
-    "eslint": "*",
-    "eslint-plugin-import": "*",
-    "prettier": "*"
+    "dotenv": "latest",
+    "eslint": "latest",
+    "eslint-plugin-import": "latest",
+    "prettier": "latest"
   },
   "engines": {
     "node": "9"
