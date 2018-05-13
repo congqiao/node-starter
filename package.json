@@ -1,15 +1,20 @@
 {
   "private": true,
   "scripts": {
-    "start": "node src",
-    "debug": "node -r dotenv/config src",
-    "lint": "eslint src",
-    "format": "prettier --write \"./**/*.{js,jsx,json,css,less,scss}\""
+    "start": "node build",
+    "debug": "nodemon -e ts,tsx -w src -r ts-node/register -r dotenv/config --inspect src",
+    "build": "tsc",
+    "lint": "tslint -p .",
+    "format": "prettier --write \"./**/*.{css,js,json,jsx,less,md,scss,ts,tsx}\""
   },
   "devDependencies": {
+    "@types/dotenv": "latest",
+    "@types/node": "latest",
     "dotenv": "latest",
-    "eslint": "latest",
-    "eslint-plugin-import": "latest",
-    "prettier": "latest"
+    "nodemon": "latest",
+    "prettier": "latest",
+    "ts-node": "latest",
+    "tslint": "latest",
+    "typescript": "latest"
   }
 }
