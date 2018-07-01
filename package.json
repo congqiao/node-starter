@@ -1,20 +1,33 @@
 {
   "private": true,
   "scripts": {
-    "start": "node build",
-    "debug": "nodemon -e ts,tsx -w src -r ts-node/register -r dotenv/config --inspect src",
-    "build": "tsc",
+    "start": "nodemon -e ts,tsx -w src -r ts-node/register -r dotenv/config --inspect src",
+    "build": "webpack -p",
     "lint": "tslint -p .",
-    "format": "prettier --write \"./**/*.{css,js,json,jsx,less,md,scss,ts,tsx}\""
+    "format": "prettier --write \"./**/*.{css,js,json,jsx,less,md,scss,ts,tsx}\"",
+    "precommit": "run-s lint format",
+    "heroku-postbuild": "yarn run build"
+  },
+  "dependencies": {
+    "source-map-support": "latest"
   },
   "devDependencies": {
     "@types/dotenv": "latest",
     "@types/node": "latest",
     "dotenv": "latest",
+    "husky": "latest",
     "nodemon": "latest",
+    "npm-run-all": "latest",
     "prettier": "latest",
+    "ts-loader": "latest",
     "ts-node": "latest",
     "tslint": "latest",
-    "typescript": "latest"
+    "tslint-config-prettier": "latest",
+    "typescript": "latest",
+    "webpack": "latest",
+    "webpack-cli": "latest"
+  },
+  "engines": {
+    "node": "10"
   }
 }

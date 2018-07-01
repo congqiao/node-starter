@@ -1,12 +1,18 @@
 {
   "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["esnext"],
     "module": "commonjs",
     "moduleResolution": "node",
-    "outDir": "build",
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "outDir": "dist",
     "rootDir": "src",
     "sourceMap": true,
-    "strict": true,
-    "strictFunctionTypes": false,
-    "target": "es6"
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "es2017"
   }
 }

@@ -1,8 +1,4 @@
 {
-  "extends": "tslint:recommended",
-  "rules": {
-    "arrow-parens": [true, "ban-single-arg-parens"],
-    "quotemark": [true, "single", "jsx-double", "avoid-escape", "avoid-template"],
-    "semicolon": [true, "never"]
-  }
+  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "rules": { "no-submodule-imports": [true, "source-map-support"] }
 }
