@@ -4,8 +4,8 @@
     "start": "ts-node -r dotenv/config src",
     "build": "tsc",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "format": "prettier --write \"./**/*.{css,js,json,jsx,less,markdown,md,scss,ts,tsx,yaml,yml}\"",
-    "format:check": "prettier -c \"./**/*.{css,js,json,jsx,less,markdown,md,scss,ts,tsx,yaml,yml}\""
+    "format": "prettier --write \"./**/*.{css,html,js,json,jsx,less,markdown,md,scss,ts,tsx,yaml,yml}\"",
+    "format:check": "prettier -c \"./**/*.{css,html,js,json,jsx,less,markdown,md,scss,ts,tsx,yaml,yml}\""
   },
   "dependencies": {
     "source-map-support": "^0.5.16"
