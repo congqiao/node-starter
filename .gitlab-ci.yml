@@ -6,22 +6,26 @@ cache:
     - node_modules/
 
 before_script:
-  - yarn
+  - npm i
 
-build:
+stages:
+  - build
+  - lint
+
+typescript:
   stage: build
   script:
-    - yarn run build
+    - npm run build
   artifacts:
     paths:
       - dist/
 
-lint:
-  stage: test
+eslint:
+  stage: lint
   script:
-    - yarn run lint
+    - npm run lint:eslint
 
-check format:
-  stage: test
+prettier:
+  stage: lint
   script:
-    - yarn run format:check
+    - npm run lint:prettier

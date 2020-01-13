@@ -1,23 +1,28 @@
 {
-  "private": true,
+  "license": "UNLICENSED",
   "scripts": {
-    "start": "ts-node -r dotenv/config src",
+    "start": "node -r source-map-support/register dist",
+    "debug": "ts-node -r dotenv/config src",
     "build": "tsc",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "format": "prettier --write \"./**/*.{css,html,js,json,jsx,less,markdown,md,scss,ts,tsx,yaml,yml}\"",
-    "format:check": "prettier -c \"./**/*.{css,html,js,json,jsx,less,markdown,md,scss,ts,tsx,yaml,yml}\""
+    "lint:eslint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "lint:prettier": "prettier -c \"./**/*.{css,html,js,json,jsx,less,markdown,md,scss,ts,tsx,yaml,yml}\"",
+    "format": "prettier --write \"./**/*.{css,html,js,json,jsx,less,markdown,md,scss,ts,tsx,yaml,yml}\""
   },
   "dependencies": {
     "source-map-support": "^0.5.16"
   },
   "devDependencies": {
-    "@types/node": "^13.1.1",
-    "@typescript-eslint/eslint-plugin": "^2.13.0",
-    "@typescript-eslint/parser": "^2.13.0",
+    "@types/node": "^13.1.6",
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
     "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
     "prettier": "^1.19.1",
-    "ts-node": "^8.5.4",
+    "ts-node": "^8.6.2",
     "typescript": "^3.7.4"
-  }
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "private": true
 }
