@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "declaration": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "lib": ["es2019"],
@@ -19,6 +18,5 @@
     "strict": true,
     "target": "es2019",
     "useDefineForClassFields": true
-  },
-  "include": ["src/**/*"]
+  }
 }
