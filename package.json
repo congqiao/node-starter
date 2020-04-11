@@ -12,14 +12,14 @@
     "source-map-support": "^0.5.16"
   },
   "devDependencies": {
-    "@types/node": "^13.1.8",
-    "@typescript-eslint/eslint-plugin": "^2.17.0",
-    "@typescript-eslint/parser": "^2.17.0",
+    "@types/node": "^13.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
     "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
-    "prettier": "^1.19.1",
-    "ts-node": "^8.6.2",
-    "typescript": "^3.7.5"
+    "prettier": "^2.0.4",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3"
   },
   "engines": {
     "node": ">=12"
