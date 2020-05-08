@@ -9,16 +9,16 @@
     "format": "prettier --write \"./**/*.{css,html,js,json,jsx,less,markdown,md,scss,ts,tsx,yaml,yml}\""
   },
   "dependencies": {
-    "source-map-support": "^0.5.17"
+    "source-map-support": "^0.5.19"
   },
   "devDependencies": {
-    "@types/node": "^13.13.1",
-    "@typescript-eslint/eslint-plugin": "^2.29.0",
-    "@typescript-eslint/parser": "^2.29.0",
+    "@types/node": "^13.13.5",
+    "@typescript-eslint/eslint-plugin": "^2.31.0",
+    "@typescript-eslint/parser": "^2.31.0",
     "dotenv": "^8.2.0",
-    "eslint": "^6.8.0",
-    "prettier": "^2.0.4",
-    "ts-node": "^8.9.0",
+    "eslint": "^7.0.0",
+    "prettier": "^2.0.5",
+    "ts-node": "^8.10.1",
     "typescript": "^3.8.3"
   },
   "engines": {
