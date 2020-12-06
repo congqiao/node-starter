@@ -4,8 +4,8 @@
     "start": "node --unhandled-rejections=strict -r source-map-support/register dist",
     "dev": "node --unhandled-rejections=strict -r ts-node/register -r dotenv/config src",
     "build": "tsc",
-    "lint:eslint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "lint:prettier": "prettier -c \"./**/*.{css,html,js,json,jsx,less,markdown,md,scss,ts,tsx,yaml,yml}\"",
+    "check:lint": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "check:format": "prettier -c \"./**/*.{css,html,js,json,jsx,less,markdown,md,scss,ts,tsx,yaml,yml}\"",
     "format": "prettier --write \"./**/*.{css,html,js,json,jsx,less,markdown,md,scss,ts,tsx,yaml,yml}\""
   },
   "dependencies": {

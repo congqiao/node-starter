@@ -1,6 +1,6 @@
 name: Node.js CI
 
-on: push
+on: [push]
 
 jobs:
   build:
@@ -17,15 +17,17 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - uses: actions/cache@v1
+        env:
+          cache-name: cache-node-modules
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
       - run: npm ci
       - run: npm run build --if-present
       - run: npm test
-        env:
-          CI: true
-      - run: npm run lint:eslint --if-present
-      - run: npm run lint:prettier --if-present
+      - run: npm run check:lint --if-present
+      - run: npm run check:format --if-present
