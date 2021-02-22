@@ -3,7 +3,7 @@
   "scripts": {
     "start": "node --unhandled-rejections=strict --enable-source-maps dist",
     "dev": "node --unhandled-rejections=strict -r ts-node/register -r dotenv/config src",
-    "build": "tsc",
+    "build": "esbuild --bundle --sourcemap --platform=node --target=es2019 --outdir=dist ./src",
     "check:lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "check:format": "prettier -c \"./**/*.{css,html,js,json,jsx,less,markdown,md,scss,ts,tsx,yaml,yml}\"",
     "format": "prettier --write \"./**/*.{css,html,js,json,jsx,less,markdown,md,scss,ts,tsx,yaml,yml}\""
@@ -13,6 +13,7 @@
     "@typescript-eslint/eslint-plugin": "^4.15.2",
     "@typescript-eslint/parser": "^4.15.2",
     "dotenv": "^8.2.0",
+    "esbuild": "^0.8.50",
     "eslint": "^7.20.0",
     "prettier": "^2.2.1",
     "ts-node": "^9.1.1",
