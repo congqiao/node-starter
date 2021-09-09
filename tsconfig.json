@@ -2,8 +2,8 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["es2019"],
-    "module": "commonjs",
+    "lib": ["esnext"],
+    "module": "esnext",
     "moduleResolution": "node",
     "newLine": "lf",
     "noEmitOnError": true,
@@ -17,7 +17,7 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es2019",
+    "target": "esnext",
     "useDefineForClassFields": true
   }
 }
