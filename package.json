@@ -2,9 +2,9 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "start": "node --experimental-specifier-resolution=node --enable-source-maps dist",
-    "dev": "node --experimental-specifier-resolution=node --loader ts-node/esm -r dotenv/config src",
+    "start": "node --loader ts-node/esm -r dotenv/config src/index.js",
     "build": "tsc",
+    "check:tsc": "tsc --noEmit",
     "check:eslint": "eslint .",
     "fix:eslint": "eslint --fix .",
     "check:prettier": "prettier --check .",
